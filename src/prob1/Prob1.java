@@ -8,10 +8,18 @@ public class Prob1 {
 		Scanner scanner = new Scanner( System.in );
 		System.out.print( "문자열을 입력하세요:" );
 		
-		String s = scanner.next();
+		String s = scanner.nextLine();
 		
 		/*  구현합니다. */
+		int length = s.length();
+		for( int i = 0; i < length; i++ ){
+			for( int j = 0; j < i+1; j++ ) {
+				System.out.print( s.charAt( j ) );
+			}
+			
+			System.out.println( "" );
+		}
 		
+		scanner.close();
 	}
-
 }
